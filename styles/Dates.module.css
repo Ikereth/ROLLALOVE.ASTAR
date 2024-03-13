@@ -1,0 +1,142 @@
+.main {
+    padding: 1rem;
+    min-height: calc(100vh - 3rem);
+    width: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: black;
+}
+
+.main_image {
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.footer {
+    display: flex;
+    flex: 1;
+    padding: 2rem 0;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(27, 27, 27);
+    color: white;
+    width: 100%;
+    height: 2rem;
+}
+
+.main_image_buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 10rem;
+    margin: 1rem;
+}
+
+.main_image_buttons_items {
+    cursor: pointer;
+}
+
+.main_image_buttons_items:hover {
+    transform: scale(1.1);
+}
+
+.main_image_name {
+    color: white;
+    font-size: 2rem;
+}
+
+
+@keyframes animationMatchButton {
+    0% {
+        transform: rotate(0deg) scale(1);
+    }
+
+    25% {
+        transform: rotate(90deg) scale(1.5);
+    }
+
+    50% {
+        transform: rotate(180deg) scale(1.5);
+    }
+
+    75% {
+        transform: rotate(270deg) scale(1.5);
+    }
+
+    100% {
+        transform: rotate(360deg) scale(1);
+    }
+}
+
+@keyframes caer {
+    0% {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+
+    60% {
+        transform: translateY(20px);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes brillo {
+
+    0%,
+    100% {
+        text-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+    }
+
+    50% {
+        text-shadow: 0 0 20px rgba(255, 255, 255, 1), 0 0 30px rgba(255, 255, 255, 1);
+    }
+}
+
+.main_text_match {
+    display: inline-block;
+    font-size: 2em;
+    color: #FFC107;
+    /* Un color llamativo */
+    animation: caer 2s ease-out, brillo 1.5s infinite alternate;
+    font-weight: bold;
+    text-align: center;
+}
+
+.main_image_match {
+    margin: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    animation: animationMatchButton 3s;
+    background-color: green;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    padding-top: 15px;
+    cursor: pointer;
+}
+
+.main_image_match Image {
+    background-color: green;
+}
+
+.main_match {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
